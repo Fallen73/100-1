@@ -1,0 +1,353 @@
+/* */
+
+/* Общие стили на странице */
+body {
+	color: #000000;
+	font: 12px Tahoma, sans-serif;
+	background-color: #eadeac;
+	/* 	border-top: 5px solid #7e7e7e; */
+	margin: 0;
+}
+input[type="text"], input[type="number"] {
+	background-color: #0000005e;
+	border: 3px solid #e7e7e7;
+	height: 40px;
+	color: #ffffff;
+	padding: 0 10px;
+	vertical-align: top;
+	margin: auto auto 16px auto;
+	font: 32px;
+	/* 	width: 460px; */
+}
+
+
+button {
+/* 	color: #fff; */
+/* 	background-color: #29c5e6; */
+/* 	border: none; */
+/* 	height: 32px; */
+/* 	width: 32px; */
+/* 	font-family: 'Oswald', sans-serif; */
+    margin: auto auto 16px auto;
+}
+p {
+	margin: 20px 0;
+}
+
+/* Сделать все по центру страницы */
+#wrapper {
+	max-width: 1100px;
+	margin: auto;
+}
+header {
+	/* 	padding: 20px 0; */
+	text-align: center;
+	background-color: #0090ff;
+}
+
+
+#heading {
+	background: transparent url(../images/h1-bg.png);
+	margin: 30px 0 0;
+/* 	padding-left: 20px; */
+}
+
+h1 {
+	display: inline-block;
+	color: #050500;
+	font: 40px/40px 'Oswald', sans-serif;
+	background: url(../images/bg.png);
+	margin: 30px;
+	padding: 0 10px;
+}
+
+
+/* Стили для полей общего счета */
+form {
+	
+}
+
+.name-total-number {
+	font-size: 22px;
+}
+
+.total-number input {
+	height: 50px;
+	width: 150px;
+	font-size: 50px;
+    text-align: center;
+}
+
+.button-vopros button{
+    height: 47px;
+    width: 150px;
+    margin: 0;
+    font-size: 32px;
+}
+
+.last {
+	height: 40px;
+	font-size: 20px;
+	/* margin-bottom: 50px; */
+	background-color: transparent;
+}
+
+.new-game {
+/* 	height: 40px; */
+/* 	font-size: 20px; */
+	/* margin-bottom: 50px; */
+	font-size: 55px;
+	background-color: #ffffff8a;
+}
+
+.next {
+	height: 40px;
+	font-size: 20px;
+	background-color: transparent;
+}
+
+/* Общие рпавила для полей меню */
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style-position: inside;
+	font: 72px 'Oswald', sans-serif;
+	padding: 10px;
+}
+
+
+.round-question li {
+/* 	display: inline-block; */
+	padding: 10px 30px;
+	margin: 0;
+	text-align: center;  /* Расположение текста по центру */
+	border: none;
+	list-style-type: none; /* Отмена пунктов маркера(точка) перед текстом в таблие */
+	font: 32px 'Oswald', sans-serif;
+}
+
+/* Основной блок */
+.osnovnoi-block {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-self: flex-end;
+	background-color: #0072ff;
+}
+
+.left-sidebar {
+	width: 200px;
+	margin-right: 24px;
+	justify-content: center;
+	align-self: flex-end;
+	background-color: #00b3ff;
+}
+
+/* Стили левого бокового меню */
+.left-menu li {
+	display: flex;
+	justify-content: center;
+	font-weight: 300;
+	list-style-type: square;
+	border-top: 1px solid #e7e7e7; /* Ширина отделяющей четры в левом меню */
+	list-style-type: none;
+/* 	font: 32px 'Oswald', sans-serif; */
+}
+
+
+.left-menu li:first-child {
+	border: none;
+	align-self: flex-end;
+	justify-content: center;
+
+}
+
+
+
+
+.left-menu li.active {
+	color: #f9ff00;
+}
+
+.left-menu a {
+	color: #8f8f8f;
+}
+
+.left-menu button {
+/* 	color: #8f8f8f; */
+    display: flex;
+	width: 52px;
+	height: 52px;
+	font-size: 52px ;
+/* 	padding: 10px; */
+	margin: 10;
+	
+		display: flex;
+/* 	color: #8f8f8f; */
+	width: 52px;
+	height: 52px;
+	font-size: 52px ;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.left-menu input {
+	/* 	color: #8f8f8f; */
+	width: 160px;
+	/* 	height: 52px; */
+	font-size: 40px;
+	/* 	padding: 10px; */
+	margin: 10;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+.answers {
+	width: calc(100% - 420px);
+	display: flex;
+	flex-wrap: nowrap;
+	/* background-color: #00b3ff; */
+}
+
+
+/* Стили меню ответов */
+.answer-menu input {
+	font-weight: 300;
+	list-style-type: square;
+	border-top: 1px solid #e7e7e7; /* Ширина отделяющей четры в левом меню */
+	list-style-type: none;
+	font: 24px 'Oswald', sans-serif;
+	width: 200px;
+	text-align: center;
+
+	
+}
+
+.answer-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: red;
+/* 	flex-grow: 1; */
+/*     width: 292px; */
+}
+
+.answer-menu .otvet {
+/* 	height: 40px; */
+/* 	flex-grow: 25;	 */
+    width: 450px;
+}
+
+.answer-menu .chislo {
+/* 	display: flex; */
+/*
+	flex-wrap: wrap;
+	flex-grow: 1;
+*/
+	width: 72px;
+}
+
+.answer-menu li {
+	font-weight: 300;
+	list-style-type: square;
+	border-top: 1px solid #e7e7e7; /* Ширина отделяющей четры в левом меню */
+	list-style-type: none;
+	font: 32px 'Oswald', sans-serif;
+}
+
+.answer-menu li:first-child {
+	border: none;
+}
+
+.answer-menu li.active {
+	color: #29c5e6;
+
+}
+
+.answer-menu a {
+	color: #8f8f8f;
+}
+
+
+.answer-menu button {
+	height: 43px;
+/* 	flex-grow: 4;	 */
+}
+
+
+
+
+/* Стили правого бокового меню */
+.right-sidebar {
+	width: 200px;
+	margin-left: 24px;
+	background-color: #00b3ff;
+}
+
+
+.right-menu li {
+	display: flex;
+	justify-content: center;
+	font-weight: 300;
+	list-style-type: square;
+	border-top: 1px solid #e7e7e7; /* Ширина отделяющей четры в левом меню */
+	list-style-type: none;
+/* 	font: 32px 'Oswald', sans-serif; */
+}
+
+.right-menu li:first-child {
+	border: none;
+}
+
+.right-menu li.active {
+	color: #f9ff00;
+}
+
+.right-menu a {
+	color: #8f8f8f;
+}
+
+.right-menu button {
+	display: flex;
+/* 	color: #8f8f8f; */
+	width: 52px;
+	height: 52px;
+	font-size: 52px ;
+	align-items: center;
+	justify-content: center;
+/* 	padding: 10px; */
+	margin: 10;
+}
+
+.right-menu input {
+	/* 	color: #8f8f8f; */
+	width: 160px;
+	/* 	height: 52px; */
+	font-size: 40px;
+	/* 	padding: 10px; */
+	margin: 10;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.selected {
+	color: red;
+/* 		event.target.style.color: red; */
+}
+
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Объявление формата документа --> 
+<html>
+	<head>
+		<!-- Техническая информация о документе --> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<title>Раунд 1</title>
+		<meta name="Generator" content="Cocoa HTML Writer">
+		<meta name="CocoaVersion" content="2113.5">
+		<link rel="stylesheet" href="../css/styles.css" type="text/css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+	<!-- 	Измениить на  -->
+		<div id="wrapper"> 
+			<header>
+				<div id="heading">
+					<button class="last" onclick="document.location='../game 100 - 1.html'"><</button>
+					<h1>Проста игра</h1>
+					<button class="next" onclick="document.location='../page/02 двойная игра.html'">></button>
+					<br>
+					<label class="name-total-number" for="scor" >Общий счет</label>
+					<script>
+						setInterval(function(){
+							var summ = 0;
+							document.querySelectorAll('.chislo').forEach(function(element){
+								summ = summ + element.valueAsNumber;
+							})
+							document.getElementById('scor').value=summ;
+						}, 1000)
+					</script>
+					<div class="total-number"> 
+						<input id="scor" type="number" >
+					</div>
+				</div>
+				<nav class="button-vopros">
+					<button name="btn1" type="button" onclick="document.getElementById('nov-vopros').innerText='Вопрос: Нетворк начинается тогда, когда приходит кто?'; event.target.style.display='none'">Вопрос</button>
+					<ul class="round-question">
+						<li id="nov-vopros"></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="osnovnoi-block">
+				<aside class="left-sidebar">
+					<nav>
+						<ul class="left-menu">
+							Название команды<br>
+							<!-- 						Сделать как label -->
+							<input type="text">
+							<li class="active">1</li>
+							<button name="btn1" type="button" onclick="event.target.classList.toggle('selected')">X</button><br>
+							<button name="btn1" type="button" onclick="event.target.classList.toggle('selected')">X</button><br>
+							<button name="btn1" type="button" onclick="event.target.classList.toggle('selected')">X</button><br>
+						</ul>
+					</nav>
+				</aside>
+				<main class="answers">
+					<form class="answer-menu"> 
+						<input class="otvet" type="text" id="otvet1" name="1" value="О Т В Е Т       1       О Т В Е Т">
+						<input class="chislo" type="number" id="chislo1" name="1" value="0">
+						<button name="btn1" type="button" onclick="document.getElementById('otvet1').value='Выходной'; document.getElementById('chislo1').value='32'">Ответ</button>
+						<input class="otvet" type="text" id="otvet2" name="2" value="О Т В Е Т       2       О Т В Е Т" readonly>
+						<input class="chislo" type="number" id="chislo2" name="1" value="0">
+						<button name="btn2" type="button" onclick="document.getElementById('otvet2').value='Тот, кто привозит алкоголь'; document.getElementById('chislo2').value='26'">Ответ</button>
+						<input class="otvet" type="text" id="otvet3" name="3" value="О Т В Е Т       3       О Т В Е Т" readonly>
+						<input class="chislo" type="number" id="chislo3" name="1" value="0">
+						<button name="btn3" type="button" onclick="document.getElementById('otvet3').value='Доставщик еды'; document.getElementById('chislo3').value='19'">Ответ</button>
+						<input class="otvet" type="text" id="otvet4" name="4" value="О Т В Е Т       4       О Т В Е Т" readonly>
+						<input class="chislo" type="number" id="chislo4" name="1" value="0">
+						<button name="btn4" type="button" onclick="document.getElementById('otvet4').value='Стас Кузнецов'; document.getElementById('chislo4').value='8'">Ответ</button>
+						<input class="otvet" type="text" id="otvet5" name="5" value="О Т В Е Т       5       О Т В Е Т" readonly>
+						<input class="chislo" type="number" id="chislo5" name="1" value="0">
+						<button name="btn5" type="button" onclick="document.getElementById('otvet5').value='Организатр'; document.getElementById('chislo5').value='6'">Ответ</button>
+						<input class="otvet" type="text" id="otvet6" name="6" value="О Т В Е Т       6       О Т В Е Т" readonly>
+						<input class="chislo" type="number" id="chislo6" name="1" value="0">
+						<button name="btn6" type="button" onclick="document.getElementById('otvet6').value='Второй человек'; document.getElementById('chislo6').value='3'">Ответ</button>
+					</form>	
+				</main>
+				<aside class="right-sidebar">
+					<nav>
+						<ul class="right-menu">
+							Название команды<br>
+							<input type="text">
+							<li class="active">1</li>
+							<button name="btn1" type="button" onclick="event.target.style.color='red'">X</button><br>
+<!-- 							color можно поменять на background -->
+							<button name="btn1" type="button" onclick="event.target.classList.toggle('selected')">X</button><br>
+							<button name="btn1" type="button" onclick="event.target.classList.add('selected')">X</button><br>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
